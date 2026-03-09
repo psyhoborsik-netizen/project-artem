@@ -1,0 +1,627 @@
+header {
+  width: 100%;
+  height: 80px;
+  background-color: rgba(20, 20, 20, 0.7);
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+}
+header .header__container {
+  width: 90%;
+  height: 75px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header .header__container > h1 {
+  font-size: 24px;
+}
+header .header__container > nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header .header__container > nav > ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+header .header__container > nav > ul > li > a {
+  text-decoration: none;
+  color: #fff;
+  transition: color 0.3s ease;
+  font-size: 14px;
+}
+header .header__container > nav > ul > li > a:hover {
+  color: #ff13f0;
+}
+header .header__container > h1 {
+  color: #fff;
+}
+header .logo {
+  color: #ff13f0;
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  header {
+    height: 50px;
+  }
+  header .header__container > h1 {
+    font-size: 18px;
+  }
+  header .header__container > nav > ul > li > a {
+    font-size: 12px;
+  }
+  header .header__container > nav > ul {
+    gap: 10px;
+  }
+}
+@media (min-width: 480px) and (max-width: 768px) {
+  header {
+    height: 65px;
+  }
+  header .header__container > h1 {
+    font-size: 22px;
+  }
+  header .header__container > nav > ul > li > a {
+    font-size: 16px;
+  }
+  header .header__container > nav > ul {
+    gap: 20px;
+  }
+}
+
+main {
+  width: 100%;
+  height: 1800px;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main .hero {
+  width: 50%;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  color: #fff;
+  margin-top: 300px;
+}
+main .hero button {
+  width: 30%;
+  height: 40px;
+  border-radius: 25px;
+  margin-top: 20px;
+  background-color: #ff13f0;
+  border: none;
+  color: #fff;
+  font-size: 18px;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+main .hero button:hover {
+  transform: scale(1.1);
+  background-color: #c154c1;
+  cursor: pointer;
+}
+main .hero h2 {
+  font-size: 58px;
+  margin-bottom: 0;
+  animation: delayText 2.5s ease-in-out forwards;
+  opacity: 0;
+}
+main .hero p {
+  font-size: 24px;
+  margin-top: 0;
+  animation: delayText 3.5s ease-in-out forwards;
+  opacity: 0;
+}
+main .catalog {
+  width: 100%;
+  height: 800px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+main .catalog .catalog__container {
+  width: 90%;
+  height: 750px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  color: #fff;
+}
+main .catalog .catalog__container > h2 {
+  font-size: 30px;
+}
+main .catalog .catalog__films {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+main .catalog .catalog__art-dexter {
+  min-width: 450px;
+  overflow: hidden;
+  height: 600px;
+  border: 2px #505050 solid;
+  border-radius: 20px;
+  background-image: url(../src/images/Dexter_New_Blood.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0;
+  transition: transform 0.5s ease, border 0.2s ease;
+}
+main .catalog .catalog__art-dexter:hover {
+  transform: translateY(-10px);
+  border: 2px grey solid;
+}
+main .catalog .catalog__art-dexter > div {
+  background-color: rgba(0, 0, 0, 0.7);
+  border: 1px #505050 solid;
+  width: 95%;
+  border-radius: 15px;
+}
+main .catalog .catalog__art-dexter > div > h3, main .catalog .catalog__art-dexter > div > p {
+  margin-left: 15px;
+}
+main .catalog .catalog__art-dexter > button {
+  min-width: 95%;
+  height: 35px;
+  background-color: rgba(0, 0, 0, 0.7);
+  border: #505050 1px solid;
+  border-radius: 25px;
+  color: #fff;
+  font-size: 18px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+main .catalog .catalog__art-dexter > button:hover {
+  background-color: #fff;
+  color: black;
+}
+main .catalog .catalog__art-houseMaid {
+  min-width: 450px;
+  overflow: hidden;
+  height: 600px;
+  border: 2px #505050 solid;
+  border-radius: 20px;
+  background-image: url(../src/images/Housemaid.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0;
+  transition: transform 0.5s ease, border 0.2s ease;
+}
+main .catalog .catalog__art-houseMaid:hover {
+  transform: translateY(-10px);
+  border: 2px grey solid;
+}
+main .catalog .catalog__art-houseMaid > div {
+  background-color: rgba(0, 0, 0, 0.7);
+  border: 1px #505050 solid;
+  width: 95%;
+  border-radius: 15px;
+}
+main .catalog .catalog__art-houseMaid > div > h3, main .catalog .catalog__art-houseMaid > div > p {
+  margin-left: 15px;
+}
+main .catalog .catalog__art-houseMaid > button {
+  min-width: 95%;
+  height: 35px;
+  background-color: rgba(0, 0, 0, 0.7);
+  border: #505050 1px solid;
+  border-radius: 25px;
+  color: #fff;
+  font-size: 18px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+main .catalog .catalog__art-houseMaid > button:hover {
+  background-color: #fff;
+  color: black;
+}
+main .catalog .catalog__art-OneBattle {
+  min-width: 450px;
+  overflow: hidden;
+  height: 600px;
+  border: 2px #505050 solid;
+  border-radius: 20px;
+  background-image: url(../src/images/OneBattle.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0;
+  transition: transform 0.5s ease, border 0.2s ease;
+}
+main .catalog .catalog__art-OneBattle:hover {
+  transform: translateY(-10px);
+  border: 2px grey solid;
+}
+main .catalog .catalog__art-OneBattle > div {
+  background-color: rgba(0, 0, 0, 0.7);
+  border: 1px #505050 solid;
+  width: 95%;
+  border-radius: 15px;
+}
+main .catalog .catalog__art-OneBattle > div > h3, main .catalog .catalog__art-OneBattle > div > p {
+  margin-left: 15px;
+}
+main .catalog .catalog__art-OneBattle > button {
+  min-width: 95%;
+  height: 35px;
+  background-color: rgba(0, 0, 0, 0.7);
+  border: #505050 1px solid;
+  border-radius: 25px;
+  color: #fff;
+  font-size: 18px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+main .catalog .catalog__art-OneBattle > button:hover {
+  background-color: #fff;
+  color: black;
+}
+@keyframes delayText {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@media (min-width: 1440px) and (max-width: 2560px) {
+  main {
+    height: 2050px;
+  }
+  main .hero h2 {
+    font-size: 50px;
+  }
+  main .hero p {
+    font-size: 20px;
+  }
+  main .catalog .catalog__art-dexter,
+  main .catalog .catalog__art-houseMaid,
+  main .catalog .catalog__art-OneBattle {
+    min-width: 400px;
+    height: 500px;
+  }
+  main .catalog__films {
+    flex-direction: row;
+  }
+  main .Booking__container {
+    min-width: 500px;
+    max-width: 600px;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1440px) {
+  main {
+    height: 1700px;
+  }
+  main .hero h2 {
+    font-size: 43px;
+  }
+  main .hero p {
+    font-size: 18px;
+  }
+  main .catalog {
+    height: 700px;
+  }
+  main .catalog .catalog__art-dexter,
+  main .catalog .catalog__art-houseMaid,
+  main .catalog .catalog__art-OneBattle {
+    min-width: 300px;
+    height: 400px;
+  }
+  main .catalog__films {
+    flex-direction: row;
+  }
+  main .Booking__container {
+    min-width: 500px;
+    max-width: 600px;
+  }
+}
+@media (min-width: 1025px) and (max-width: 1199px) {
+  main {
+    height: 1700px;
+  }
+  main .hero h2 {
+    font-size: 36px;
+  }
+  main .hero p {
+    font-size: 18px;
+  }
+  main .hero button {
+    width: 40%;
+  }
+  main .catalog {
+    height: 600px;
+  }
+  main .catalog .catalog__art-dexter,
+  main .catalog .catalog__art-houseMaid,
+  main .catalog .catalog__art-OneBattle {
+    min-width: 250px;
+    height: 350px;
+  }
+  main .catalog__films {
+    flex-direction: row;
+  }
+  main .Booking__container {
+    min-width: 500px;
+    max-width: 600px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  main {
+    height: 1400px;
+  }
+  main .hero h2 {
+    font-size: 28px;
+    margin-bottom: 30px;
+  }
+  main .hero p {
+    font-size: 16px;
+    margin-top: -30px;
+  }
+  main .hero button {
+    width: 40%;
+    margin-bottom: 60px;
+  }
+  main .catalog {
+    height: 450px;
+  }
+  main .catalog .catalog__art-dexter,
+  main .catalog .catalog__art-houseMaid,
+  main .catalog .catalog__art-OneBattle {
+    min-width: 200px;
+    height: 300px;
+    padding: 10px 0;
+  }
+  main .catalog .catalog__films {
+    gap: 30px;
+    flex-direction: row;
+  }
+  main .Booking__container {
+    min-width: 500px;
+    max-width: 600px;
+  }
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  main {
+    height: 1900px;
+  }
+  main .hero {
+    height: 250px;
+  }
+  main .hero h2 {
+    font-size: 20px;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  main .hero p {
+    font-size: 12px;
+    margin-top: -10px;
+    text-align: center;
+  }
+  main .hero button {
+    width: 60%;
+    font-size: 12px;
+    margin-bottom: 60px;
+  }
+  main .catalog {
+    height: 1000px;
+  }
+  main .catalog .catalog__art-dexter,
+  main .catalog .catalog__art-houseMaid,
+  main .catalog .catalog__art-OneBattle {
+    min-width: 220px;
+    height: 300px;
+    padding: 10px 0;
+  }
+  main .catalog .catalog__container > h2 {
+    margin-bottom: 50px;
+  }
+  main .catalog .catalog__films {
+    gap: 30px;
+    flex-direction: column;
+    height: 1000px;
+  }
+  main .Booking .Booking__container {
+    min-width: 300px;
+    max-width: 600px;
+  }
+}
+@media (min-width: 480px) and (max-width: 768px) {
+  main {
+    height: 1900px;
+  }
+  main .hero {
+    height: 250px;
+  }
+  main .hero h2 {
+    font-size: 28px;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  main .hero p {
+    font-size: 18px;
+    margin-top: -10px;
+    text-align: center;
+  }
+  main .hero button {
+    width: 60%;
+    height: 40px;
+    font-size: 16px;
+  }
+  main .catalog {
+    height: 1000px;
+  }
+  main .catalog .catalog__art-dexter,
+  main .catalog .catalog__art-houseMaid,
+  main .catalog .catalog__art-OneBattle {
+    min-width: 220px;
+    height: 300px;
+    padding: 10px 0;
+  }
+  main .catalog .catalog__container > h2 {
+    margin-bottom: 50px;
+  }
+  main .catalog .catalog__films {
+    gap: 30px;
+    flex-direction: column;
+    height: 1000px;
+  }
+  main .Booking__container {
+    min-width: 400px;
+    max-width: 600px;
+  }
+  main .Booking__date {
+    height: 80%;
+  }
+  main .Booking__seat {
+    height: 85%;
+  }
+}
+main .Booking {
+  width: 100%;
+  height: 900px;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main .Booking .Booking__container {
+  width: 35%;
+  height: 250px;
+  border: 2px #505050 solid;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background: radial-gradient(circle, #1a0505 10%, #000000 90%);
+}
+main .Booking .Booking__info {
+  width: 70%;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  border-right: 2px #505050 dashed;
+  position: relative;
+}
+main .Booking .Booking__qr {
+  width: 30%;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-align: center;
+}
+main .Booking .Booking__qr > h3 {
+  margin-top: 0;
+}
+main .Booking .Booking__header {
+  width: 80%;
+  height: 25%;
+  display: flex;
+  align-items: end;
+  justify-content: start;
+  color: #fff;
+  margin-bottom: 20px;
+}
+main .Booking .Booking__header > span {
+  margin-bottom: 10px;
+}
+main .Booking .Booking__name {
+  width: 80%;
+  height: 25%;
+  display: flex;
+  flex-direction: column;
+  align-items: self-start;
+  justify-content: center;
+  gap: 10px;
+  color: #fff;
+}
+main .Booking .Booking__name > p {
+  margin: 0;
+}
+main .Booking .Booking__name > h3 {
+  margin: 0;
+  font-size: 32px;
+}
+main .Booking .Booking__details {
+  width: 80%;
+  height: 40%;
+  align-items: center;
+  justify-content: start;
+  gap: 40px;
+  display: flex;
+  color: #fff;
+}
+main .Booking .circle {
+  width: 6%;
+  height: 12%;
+  background-color: black;
+  border-radius: 50%;
+  position: absolute;
+  top: -5%;
+  left: 97%;
+}
+main .Booking .oval {
+  width: 6%;
+  height: 12%;
+  background-color: black;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 97%;
+}
+
+footer {
+  width: 100%;
+  height: 100px;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer div {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  footer div > p {
+    font-size: 14px;
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  opacity: 2;
+}
