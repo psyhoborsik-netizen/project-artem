@@ -5,7 +5,7 @@ header {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-image: url(./src/images/headerBack.webp);
+    background-image: url(../src/images/headerBack.webp);
     @include background_image;
     
 
@@ -164,7 +164,7 @@ header {
         justify-content: center;
         align-items: center;
         position: relative;
-        background-image: url(/src/images/iframe.webp);
+        background-image: url(../src/images/iframe.webp);
         @include background_image;
         width: 30%;
         height: 250px;
