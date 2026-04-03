@@ -2,7 +2,7 @@
         height: 1624px;
         width: 100%;
         @include flex-center;
-        background-image: url(/src/images/heroBeach.webp);
+        background-image: url(./src/images/heroBeach.webp);
         @include background_image;
 
         .hero__container {
